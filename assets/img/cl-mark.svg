@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="cltitle">
+  <title id="cltitle">Crimson Labs Mark</title>
+  <defs>
+    <linearGradient id="clg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7647" />
+      <stop offset="55%" stop-color="#c31a46" />
+      <stop offset="100%" stop-color="#7f1ec7" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="17" fill="#120d15" />
+  <path d="M18 21h28v6H24v9h20v6H24v10h22v6H18z" fill="url(#clg)" />
+  <circle cx="47" cy="17" r="4" fill="#ff8e6a" />
+</svg>
