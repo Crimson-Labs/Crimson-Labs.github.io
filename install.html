@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crimson Labs - Install Guide</title>
+    <meta name="description" content="Install guide for Crimson Labs themes on BetterDiscord and Vencord." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">Crimson <mark>Labs</mark></a>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a href="extensions.html">Extensions</a>
+          <a class="active" href="install.html">Install Guide</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell">
+      <section class="hero">
+        <div class="hero-copy fade-up">
+          <span class="eyebrow">Install Guide</span>
+          <h1>Set Up Themes in 3 Minutes.</h1>
+          <p class="lead">
+            Download a <code>.theme.css</code>, move it into your themes folder, and enable it inside your client settings.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="themes.html">Go to Theme Downloads</a>
+          </div>
+        </div>
+        <aside class="hero-panel fade-up">
+          <div class="theme-split">
+            <div class="split-item crimson">
+              <span class="split-label">Step 1: Download</span>
+            </div>
+            <div class="split-item purple">
+              <span class="split-label">Step 2: Enable</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="grid">
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>BetterDiscord Setup</h3>
+              <ol class="list">
+                <li>Open BetterDiscord settings inside Discord.</li>
+                <li>Go to Themes and click Open Themes Folder.</li>
+                <li>Place <code>crimson.theme.css</code> or <code>purple.theme.css</code> into that folder.</li>
+                <li>Enable the toggle next to the theme name.</li>
+              </ol>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer"
+                  >BetterDiscord Home</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>Vencord Setup</h3>
+              <ol class="list">
+                <li>Open Vencord settings.</li>
+                <li>Go to Themes or QuickCSS and load your local theme file.</li>
+                <li>Enable the selected theme.</li>
+                <li>Reload Discord if changes do not appear immediately.</li>
+              </ol>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://vencord.dev/" target="_blank" rel="noreferrer">Vencord Home</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head fade-up">
+          <h2>Keep It Updated</h2>
+          <p>If you deploy this site on GitHub Pages, users always get the newest theme links from your repos.</p>
+        </div>
+        <div class="mini-grid">
+          <article class="mini-card fade-up">
+            <h3>Site Repo</h3>
+            <p>Push this folder into <code>Crimson-Labs.github.io</code> on GitHub.</p>
+          </article>
+          <article class="mini-card fade-up">
+            <h3>Theme Repos</h3>
+            <p>Keep <code>crimson-theme</code> and <code>purple-theme</code> updated with matching file names.</p>
+          </article>
+          <article class="mini-card fade-up">
+            <h3>Deploy Workflow</h3>
+            <p>Use the included GitHub Action to deploy automatically on push or manually with one click.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-shell footer">
+      <p>Crimson Labs Site | <span data-year></span> | Fast setup, clean links, no clutter</p>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
