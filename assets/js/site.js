@@ -58,6 +58,50 @@ if (reveals.length > 0) {
   reveals.forEach((node) => observer.observe(node));
 }
 
+const ghNodes = document.querySelectorAll("[data-gh-repo][data-gh-field]");
+if (ghNodes.length > 0) {
+  const cache = new Map();
+
+  const formatRelativeTime = (iso) => {
+    const diff = Date.now() - new Date(iso).getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 60) return `${mins}m ago`;
+    const hours = Math.floor(mins / 60);
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
+  };
+
+  const fillNode = (node, data) => {
+    const field = node.getAttribute("data-gh-field");
+    if (field === "stars") node.textContent = String(data.stargazers_count ?? 0);
+    if (field === "forks") node.textContent = String(data.forks_count ?? 0);
+    if (field === "issues") node.textContent = String(data.open_issues_count ?? 0);
+    if (field === "updated") node.textContent = formatRelativeTime(data.updated_at);
+    if (field === "watchers") node.textContent = String(data.subscribers_count ?? 0);
+  };
+
+  const loadRepo = async (repo) => {
+    if (cache.has(repo)) return cache.get(repo);
+    const res = await fetch(`https://api.github.com/repos/${repo}`);
+    if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+    const data = await res.json();
+    cache.set(repo, data);
+    return data;
+  };
+
+  ghNodes.forEach(async (node) => {
+    const repo = node.getAttribute("data-gh-repo");
+    if (!repo) return;
+    try {
+      const data = await loadRepo(repo);
+      fillNode(node, data);
+    } catch (_) {
+      node.textContent = "-";
+    }
+  });
+}
+
 const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (!prefersReduced) {

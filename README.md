@@ -6,8 +6,10 @@ Modern multi-page site for Crimson Labs themes and extension links.
 
 - `index.html` - landing page
 - `themes.html` - Crimson and Purple theme downloads
+- `preview.html` - image previews from theme repositories
 - `download.html` - BetterDiscord/Vencord download hub + Crimson theme repos
 - `extensions.html` - official BetterDiscord and Vencord plugin links
+- `status.html` - live GitHub repository metrics (free public API)
 - `install.html` - install guide
 - `.github/workflows/deploy-pages.yml` - GitHub Pages auto deploy + one-click manual deploy
 

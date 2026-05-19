@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crimson Labs - Download</title>
-    <meta
-      name="description"
-      content="Download BetterDiscord and Vencord from official pages, plus quick access to Crimson Labs theme repositories."
-    />
+    <title>Crimson Labs - Preview</title>
+    <meta name="description" content="Preview page for Crimson Labs themes with assets from the theme repositories." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +13,7 @@
     />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-download">
+  <body class="page-preview">
     <header class="topbar">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
@@ -28,8 +25,8 @@
           <nav class="site-nav" data-nav>
             <a href="index.html">Home</a>
             <a href="themes.html">Themes</a>
-            <a href="preview.html">Preview</a>
-            <a class="active" href="download.html">Download</a>
+            <a class="active" href="preview.html">Preview</a>
+            <a href="download.html">Download</a>
             <a href="extensions.html">Extensions</a>
             <a href="status.html">Status</a>
             <a href="install.html">Install Guide</a>
@@ -54,19 +51,19 @@
         <div class="hero-copy fade-up">
           <span class="motion-ring r1"></span>
           <span class="motion-ring r2"></span>
-          <span class="eyebrow">Download Center</span>
-          <h1>Get the Client Mods and Theme Repos Fast.</h1>
+          <span class="eyebrow">Theme Preview</span>
+          <h1>Live Visual Assets from Your Repos.</h1>
           <p class="lead">
-            Use official pages for BetterDiscord and Vencord installers. Theme links below go straight to your Crimson Labs repositories.
+            This page pulls real preview images from your `crimson-theme` and `purple-theme` repositories.
           </p>
         </div>
         <aside class="hero-panel fade-up" data-parallax="6">
           <div class="theme-split">
             <div class="split-item crimson">
-              <span class="split-label">Official Client Downloads</span>
+              <span class="split-label">Crimson Preview</span>
             </div>
             <div class="split-item purple">
-              <span class="split-label">Crimson Theme Repos</span>
+              <span class="split-label">Purple Preview</span>
             </div>
           </div>
         </aside>
@@ -74,56 +71,64 @@
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Client Downloads</h2>
-          <p>These buttons open the official download pages.</p>
+          <h2>Animated + Static Previews</h2>
+          <p>Raw images served directly from GitHub repository assets.</p>
         </div>
-        <div class="grid">
-          <article class="card fade-up">
-            <div class="card-body">
-              <h3>BetterDiscord</h3>
-              <p>Open the official BetterDiscord page and use the main download button for the latest installer.</p>
-              <div class="actions">
-                <a class="btn btn-primary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">Open BetterDiscord Download</a>
-                <button class="btn btn-secondary" type="button" data-copy="https://betterdiscord.app/">Copy Download Link</button>
-              </div>
-            </div>
-          </article>
-          <article class="card fade-up">
-            <div class="card-body">
-              <h3>Vencord</h3>
-              <p>Open the official Vencord download page and choose your platform installer.</p>
-              <div class="actions">
-                <a class="btn btn-primary" href="https://vencord.dev/download/" target="_blank" rel="noreferrer">Open Vencord Download</a>
-                <button class="btn btn-secondary" type="button" data-copy="https://vencord.dev/download/">Copy Download Link</button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head fade-up">
-          <h2>Your Theme Repositories</h2>
-          <p>Direct links to your own theme repositories on GitHub.</p>
-        </div>
-        <div class="grid">
-          <article class="card fade-up">
-            <div class="card-body">
-              <h3>crimson-theme</h3>
-              <p>Main red variant repository.</p>
+        <div class="preview-grid">
+          <article class="preview-card fade-up">
+            <img
+              class="preview-media"
+              src="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson-bg.gif"
+              alt="Crimson animated preview"
+            />
+            <div class="preview-body">
+              <h3>Crimson Animated</h3>
               <div class="actions">
                 <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/crimson-theme" target="_blank" rel="noreferrer">Open Repo</a>
-                <button class="btn btn-secondary" type="button" data-copy="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson.theme.css">Copy Theme Raw</button>
+                <button class="btn btn-secondary" type="button" data-copy="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson-bg.gif">Copy Asset URL</button>
               </div>
             </div>
           </article>
-          <article class="card fade-up">
-            <div class="card-body">
-              <h3>purple-theme</h3>
-              <p>Main purple variant repository.</p>
+
+          <article class="preview-card fade-up">
+            <img
+              class="preview-media"
+              src="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson-bg.png"
+              alt="Crimson static preview"
+            />
+            <div class="preview-body">
+              <h3>Crimson Static</h3>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson-bg.png" target="_blank" rel="noreferrer">Open Image</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="preview-card fade-up">
+            <img
+              class="preview-media"
+              src="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple-bg.gif"
+              alt="Purple animated preview"
+            />
+            <div class="preview-body">
+              <h3>Purple Animated</h3>
               <div class="actions">
                 <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/purple-theme" target="_blank" rel="noreferrer">Open Repo</a>
-                <button class="btn btn-secondary" type="button" data-copy="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple.theme.css">Copy Theme Raw</button>
+                <button class="btn btn-secondary" type="button" data-copy="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple-bg.gif">Copy Asset URL</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="preview-card fade-up">
+            <img
+              class="preview-media"
+              src="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple-bg.png"
+              alt="Purple static preview"
+            />
+            <div class="preview-body">
+              <h3>Purple Static</h3>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple-bg.png" target="_blank" rel="noreferrer">Open Image</a>
               </div>
             </div>
           </article>

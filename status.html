@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crimson Labs - Install Guide</title>
-    <meta name="description" content="Install guide for Crimson Labs themes on BetterDiscord and Vencord." />
+    <title>Crimson Labs - Status</title>
+    <meta name="description" content="Live status and free GitHub repository metrics for Crimson Labs projects." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-install">
+  <body class="page-status">
     <header class="topbar">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
@@ -28,8 +28,8 @@
             <a href="preview.html">Preview</a>
             <a href="download.html">Download</a>
             <a href="extensions.html">Extensions</a>
-            <a href="status.html">Status</a>
-            <a class="active" href="install.html">Install Guide</a>
+            <a class="active" href="status.html">Status</a>
+            <a href="install.html">Install Guide</a>
           </nav>
           <div class="social-top">
             <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -51,22 +51,19 @@
         <div class="hero-copy fade-up">
           <span class="motion-ring r1"></span>
           <span class="motion-ring r2"></span>
-          <span class="eyebrow">Install Guide</span>
-          <h1>Set Up Themes in 3 Minutes.</h1>
+          <span class="eyebrow">Live Status</span>
+          <h1>Repo Health and Activity.</h1>
           <p class="lead">
-            Download a <code>.theme.css</code>, move it into your themes folder, and enable it inside your client settings.
+            Free live metrics from the public GitHub API. No extra setup required from your side.
           </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="themes.html">Go to Theme Downloads</a>
-          </div>
         </div>
         <aside class="hero-panel fade-up" data-parallax="5">
           <div class="theme-split">
             <div class="split-item crimson">
-              <span class="split-label">Step 1: Download</span>
+              <span class="split-label">Stars + Activity</span>
             </div>
             <div class="split-item purple">
-              <span class="split-label">Step 2: Enable</span>
+              <span class="split-label">Always Free</span>
             </div>
           </div>
         </aside>
@@ -74,45 +71,41 @@
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Setup Flow</h2>
-          <p>Follow this sequence for each client and you should be fully set in minutes.</p>
+          <h2>Repository Metrics</h2>
+          <p>Values refresh automatically when users open this page.</p>
         </div>
-        <div class="steps-flow">
-          <article class="step-card fade-up">
-            <span class="step-no">01</span>
-            <div>
-              <h3>Download Theme File</h3>
-              <p>Open <code>themes.html</code>, choose one theme, and download the raw <code>.theme.css</code> file.</p>
+        <div class="status-grid">
+          <article class="status-card fade-up">
+            <h3>Crimson-Labs.github.io</h3>
+            <div class="status-meta">
+              <div><small>Stars</small><strong data-gh-repo="Crimson-Labs/Crimson-Labs.github.io" data-gh-field="stars">...</strong></div>
+              <div><small>Forks</small><strong data-gh-repo="Crimson-Labs/Crimson-Labs.github.io" data-gh-field="forks">...</strong></div>
+              <div><small>Open Issues</small><strong data-gh-repo="Crimson-Labs/Crimson-Labs.github.io" data-gh-field="issues">...</strong></div>
+              <div><small>Updated</small><strong data-gh-repo="Crimson-Labs/Crimson-Labs.github.io" data-gh-field="updated">...</strong></div>
             </div>
           </article>
-          <article class="step-card fade-up">
-            <span class="step-no">02</span>
-            <div>
-              <h3>Open Client Theme Folder</h3>
-              <p>In BetterDiscord use "Open Themes Folder". In Vencord use Themes or QuickCSS loader.</p>
+
+          <article class="status-card fade-up">
+            <h3>crimson-theme</h3>
+            <div class="status-meta">
+              <div><small>Stars</small><strong data-gh-repo="Crimson-Labs/crimson-theme" data-gh-field="stars">...</strong></div>
+              <div><small>Forks</small><strong data-gh-repo="Crimson-Labs/crimson-theme" data-gh-field="forks">...</strong></div>
+              <div><small>Open Issues</small><strong data-gh-repo="Crimson-Labs/crimson-theme" data-gh-field="issues">...</strong></div>
+              <div><small>Updated</small><strong data-gh-repo="Crimson-Labs/crimson-theme" data-gh-field="updated">...</strong></div>
             </div>
           </article>
-          <article class="step-card fade-up">
-            <span class="step-no">03</span>
-            <div>
-              <h3>Move File and Enable</h3>
-              <p>Place <code>crimson.theme.css</code> or <code>purple.theme.css</code> into the folder and toggle it on.</p>
+
+          <article class="status-card fade-up">
+            <h3>purple-theme</h3>
+            <div class="status-meta">
+              <div><small>Stars</small><strong data-gh-repo="Crimson-Labs/purple-theme" data-gh-field="stars">...</strong></div>
+              <div><small>Forks</small><strong data-gh-repo="Crimson-Labs/purple-theme" data-gh-field="forks">...</strong></div>
+              <div><small>Open Issues</small><strong data-gh-repo="Crimson-Labs/purple-theme" data-gh-field="issues">...</strong></div>
+              <div><small>Updated</small><strong data-gh-repo="Crimson-Labs/purple-theme" data-gh-field="updated">...</strong></div>
             </div>
           </article>
-          <article class="step-card fade-up">
-            <span class="step-no">04</span>
-            <div>
-              <h3>Reload if Needed</h3>
-              <p>If visuals do not apply instantly, reload Discord once and verify active plugins are compatible.</p>
-            </div>
-          </article>
-        </div>
-        <div class="actions">
-          <a class="btn btn-secondary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">BetterDiscord Home</a>
-          <a class="btn btn-secondary" href="https://vencord.dev/" target="_blank" rel="noreferrer">Vencord Home</a>
         </div>
       </section>
-
     </main>
 
     <footer class="site-shell footer">
