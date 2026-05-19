@@ -1,10 +1,13 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crimson Labs - Install Guide</title>
-    <meta name="description" content="Install guide for Crimson Labs themes on BetterDiscord and Vencord." />
+    <title>Crimson Labs - Download</title>
+    <meta
+      name="description"
+      content="Download BetterDiscord and Vencord from official pages, plus quick access to Crimson Labs theme repositories."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +16,7 @@
     />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-install">
+  <body class="page-download">
     <header class="topbar">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
@@ -25,9 +28,9 @@
           <nav class="site-nav" data-nav>
             <a href="index.html">Home</a>
             <a href="themes.html">Themes</a>
-            <a href="download.html">Download</a>
+            <a class="active" href="download.html">Download</a>
             <a href="extensions.html">Extensions</a>
-            <a class="active" href="install.html">Install Guide</a>
+            <a href="install.html">Install Guide</a>
           </nav>
           <div class="social-top">
             <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -49,22 +52,19 @@
         <div class="hero-copy fade-up">
           <span class="motion-ring r1"></span>
           <span class="motion-ring r2"></span>
-          <span class="eyebrow">Install Guide</span>
-          <h1>Set Up Themes in 3 Minutes.</h1>
+          <span class="eyebrow">Download Center</span>
+          <h1>Get the Client Mods and Theme Repos Fast.</h1>
           <p class="lead">
-            Download a <code>.theme.css</code>, move it into your themes folder, and enable it inside your client settings.
+            Use official pages for BetterDiscord and Vencord installers. Theme links below go straight to your Crimson Labs repositories.
           </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="themes.html">Go to Theme Downloads</a>
-          </div>
         </div>
-        <aside class="hero-panel fade-up" data-parallax="5">
+        <aside class="hero-panel fade-up" data-parallax="6">
           <div class="theme-split">
             <div class="split-item crimson">
-              <span class="split-label">Step 1: Download</span>
+              <span class="split-label">Official Client Downloads</span>
             </div>
             <div class="split-item purple">
-              <span class="split-label">Step 2: Enable</span>
+              <span class="split-label">Crimson Theme Repos</span>
             </div>
           </div>
         </aside>
@@ -72,45 +72,57 @@
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Setup Flow</h2>
-          <p>Follow this sequence for each client and you should be fully set in minutes.</p>
+          <h2>Client Downloads</h2>
+          <p>These buttons open the official download pages.</p>
         </div>
-        <div class="steps-flow">
-          <article class="step-card fade-up">
-            <span class="step-no">01</span>
-            <div>
-              <h3>Download Theme File</h3>
-              <p>Open <code>themes.html</code>, choose one theme, and download the raw <code>.theme.css</code> file.</p>
+        <div class="grid">
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>BetterDiscord</h3>
+              <p>Open the official BetterDiscord page and use the main download button for the latest installer.</p>
+              <div class="actions">
+                <a class="btn btn-primary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">Open BetterDiscord Download</a>
+              </div>
             </div>
           </article>
-          <article class="step-card fade-up">
-            <span class="step-no">02</span>
-            <div>
-              <h3>Open Client Theme Folder</h3>
-              <p>In BetterDiscord use "Open Themes Folder". In Vencord use Themes or QuickCSS loader.</p>
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>Vencord</h3>
+              <p>Open the official Vencord download page and choose your platform installer.</p>
+              <div class="actions">
+                <a class="btn btn-primary" href="https://vencord.dev/download/" target="_blank" rel="noreferrer">Open Vencord Download</a>
+              </div>
             </div>
           </article>
-          <article class="step-card fade-up">
-            <span class="step-no">03</span>
-            <div>
-              <h3>Move File and Enable</h3>
-              <p>Place <code>crimson.theme.css</code> or <code>purple.theme.css</code> into the folder and toggle it on.</p>
-            </div>
-          </article>
-          <article class="step-card fade-up">
-            <span class="step-no">04</span>
-            <div>
-              <h3>Reload if Needed</h3>
-              <p>If visuals do not apply instantly, reload Discord once and verify active plugins are compatible.</p>
-            </div>
-          </article>
-        </div>
-        <div class="actions">
-          <a class="btn btn-secondary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">BetterDiscord Home</a>
-          <a class="btn btn-secondary" href="https://vencord.dev/" target="_blank" rel="noreferrer">Vencord Home</a>
         </div>
       </section>
 
+      <section class="section">
+        <div class="section-head fade-up">
+          <h2>Your Theme Repositories</h2>
+          <p>Direct links to your own theme repositories on GitHub.</p>
+        </div>
+        <div class="grid">
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>crimson-theme</h3>
+              <p>Main red variant repository.</p>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/crimson-theme" target="_blank" rel="noreferrer">Open Repo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>purple-theme</h3>
+              <p>Main purple variant repository.</p>
+              <div class="actions">
+                <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/purple-theme" target="_blank" rel="noreferrer">Open Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="site-shell footer">
