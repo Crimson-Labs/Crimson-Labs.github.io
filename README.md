@@ -26,3 +26,4 @@ Modern multi-page site for Crimson Labs themes and extension links.
 
 - Crimson: `https://github.com/Crimson-Labs/crimson-theme`
 - Purple: `https://github.com/Crimson-Labs/purple-theme`
+- Reze: `https://github.com/Crimson-Labs/reze-theme`
