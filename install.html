@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crimson Labs - Install Guide</title>
-    <meta name="description" content="Install guide for Crimson Labs themes on BetterDiscord and Vencord." />
+    <title>Crimson Labs - Install</title>
+    <meta name="description" content="Quick setup flow for Crimson Labs themes." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,113 +14,54 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body class="page-install">
-    <header class="topbar">
+    <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
           <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
           <span>Crimson <mark>Labs</mark></span>
         </a>
-        <div class="top-right">
-          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
-          <nav class="site-nav" data-nav>
-            <a href="index.html">Home</a>
-            <a href="themes.html">Themes</a>
-            <a href="preview.html">Preview</a>
-            <a href="download.html">Download</a>
-            <a href="extensions.html">Extensions</a>
-            <a href="status.html">Status</a>
-            <a href="credits.html">Credits</a>
-            <a class="active" href="install.html">Install Guide</a>
-          </nav>
-          <div class="social-top">
-            <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <img class="social-icon" src="https://cdn.simpleicons.org/github/181717" alt="" />
-            </a>
-            <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-              <img class="social-icon" src="https://cdn.simpleicons.org/discord/5865F2" alt="" />
-            </a>
-            <a class="social-dot" href="https://github.com/Crimson-Labs?tab=repositories" target="_blank" rel="noreferrer" aria-label="Repositories">
-              <img class="social-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" />
-            </a>
-          </div>
+        <div class="social-top">
+          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+          </a>
+          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
+            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
+          </a>
         </div>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a href="preview.html">Preview</a>
+          <a href="download.html">Download</a>
+          <a href="extensions.html">Extensions</a>
+          <a href="status.html">Status</a>
+          <a href="credits.html">Credits</a>
+          <a class="active" href="install.html">Install</a>
+        </nav>
       </div>
     </header>
 
     <main class="site-shell">
-      <section class="hero">
-        <div class="hero-copy fade-up">
-          <span class="motion-ring r1"></span>
-          <span class="motion-ring r2"></span>
-          <span class="eyebrow">Install Guide</span>
-          <h1>Set Up Themes in 3 Minutes.</h1>
-          <p class="lead">
-            Download a <code>.theme.css</code>, move it into your themes folder, and enable it inside your client settings.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="themes.html">Go to Theme Downloads</a>
-          </div>
-        </div>
-        <aside class="hero-panel fade-up" data-parallax="5">
-          <div class="theme-split">
-            <div class="split-item crimson">
-              <span class="split-label">Step 1: Download</span>
-            </div>
-            <div class="split-item purple">
-              <span class="split-label">Step 2: Enable</span>
-            </div>
-          </div>
-        </aside>
+      <section class="hero fade-up">
+        <span class="eyebrow">Install Flow</span>
+        <h1>Set Up Any Theme in Under 3 Minutes.</h1>
+        <p class="lead">Use this sequence for BetterDiscord or Vencord.</p>
       </section>
 
       <section class="section">
-        <div class="section-head fade-up">
-          <h2>Setup Flow</h2>
-          <p>Follow this sequence for each client and you should be fully set in minutes.</p>
-        </div>
         <div class="steps-flow">
-          <article class="step-card fade-up">
-            <span class="step-no">01</span>
-            <div>
-              <h3>Download Theme File</h3>
-              <p>Open <code>themes.html</code>, choose one theme, and download the raw <code>.theme.css</code> file.</p>
-            </div>
-          </article>
-          <article class="step-card fade-up">
-            <span class="step-no">02</span>
-            <div>
-              <h3>Open Client Theme Folder</h3>
-              <p>In BetterDiscord use "Open Themes Folder". In Vencord use Themes or QuickCSS loader.</p>
-            </div>
-          </article>
-          <article class="step-card fade-up">
-            <span class="step-no">03</span>
-            <div>
-              <h3>Move File and Enable</h3>
-              <p>Place <code>crimson.theme.css</code> or <code>purple.theme.css</code> into the folder and toggle it on.</p>
-            </div>
-          </article>
-          <article class="step-card fade-up">
-            <span class="step-no">04</span>
-            <div>
-              <h3>Reload if Needed</h3>
-              <p>If visuals do not apply instantly, reload Discord once and verify active plugins are compatible.</p>
-            </div>
-          </article>
-        </div>
-        <div class="actions">
-          <a class="btn btn-secondary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">BetterDiscord Home</a>
+          <article class="step-card fade-up"><span class="step-no">01</span><div><h3>Open Themes Page</h3><p>Go to `Themes` and choose your preferred style.</p></div></article>
+          <article class="step-card fade-up"><span class="step-no">02</span><div><h3>Download .theme.css</h3><p>Use the raw download button from the selected theme card.</p></div></article>
+          <article class="step-card fade-up"><span class="step-no">03</span><div><h3>Move into Theme Folder</h3><p>Place the file in your BetterDiscord/Vencord themes directory.</p></div></article>
+          <article class="step-card fade-up"><span class="step-no">04</span><div><h3>Enable and Reload</h3><p>Enable the theme in client settings and reload Discord if needed.</p></div></article>
         </div>
       </section>
-
     </main>
 
     <footer class="site-shell footer">
       <p>Crimson Labs | 2026 | by lostinmyowntears</p>
     </footer>
-
     <script src="assets/js/site.js"></script>
   </body>
 </html>
-
-

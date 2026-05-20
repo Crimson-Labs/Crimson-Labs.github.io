@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Preview</title>
-    <meta name="description" content="Preview page for Crimson Labs themes with assets from the theme repositories." />
+    <meta name="description" content="Visual previews of Crimson Labs themes from repository assets." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,107 +14,67 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body class="page-preview">
-    <header class="topbar">
+    <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
           <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
           <span>Crimson <mark>Labs</mark></span>
         </a>
-        <div class="top-right">
-          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
-          <nav class="site-nav" data-nav>
-            <a href="index.html">Home</a>
-            <a href="themes.html">Themes</a>
-            <a class="active" href="preview.html">Preview</a>
-            <a href="download.html">Download</a>
-            <a href="extensions.html">Extensions</a>
-            <a href="status.html">Status</a>
-            <a href="credits.html">Credits</a>
-            <a href="install.html">Install Guide</a>
-          </nav>
-          <div class="social-top">
-            <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <img class="social-icon" src="https://cdn.simpleicons.org/github/181717" alt="" />
-            </a>
-            <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-              <img class="social-icon" src="https://cdn.simpleicons.org/discord/5865F2" alt="" />
-            </a>
-            <a class="social-dot" href="https://github.com/Crimson-Labs?tab=repositories" target="_blank" rel="noreferrer" aria-label="Repositories">
-              <img class="social-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" />
-            </a>
-          </div>
+        <div class="social-top">
+          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+          </a>
+          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
+            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
+          </a>
         </div>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a class="active" href="preview.html">Preview</a>
+          <a href="download.html">Download</a>
+          <a href="extensions.html">Extensions</a>
+          <a href="status.html">Status</a>
+          <a href="credits.html">Credits</a>
+          <a href="install.html">Install</a>
+        </nav>
       </div>
     </header>
 
     <main class="site-shell">
-      <section class="hero">
-        <div class="hero-copy fade-up">
-          <span class="motion-ring r1"></span>
-          <span class="motion-ring r2"></span>
-          <span class="eyebrow">Theme Preview</span>
-          <h1>Live Visual Assets from Your Repos.</h1>
-          <p class="lead">
-            This page uses the exact preview files from each theme repository.
-          </p>
+      <section class="hero fade-up">
+        <span class="eyebrow">Visual Reference</span>
+        <h1>Preview Shots from Each Theme Repository.</h1>
+        <p class="lead">These are the actual preview files in your `main` branches.</p>
+        <div class="hero-metrics">
+          <span class="chip">Preview-Crimson.png</span>
+          <span class="chip">Preview-Purple.png</span>
+          <span class="chip">Reze-Preview.png</span>
         </div>
-        <aside class="hero-panel fade-up" data-parallax="6">
-          <div class="theme-split">
-            <div class="split-item crimson">
-              <span class="split-label">Preview-Crimson.png</span>
-            </div>
-            <div class="split-item reze">
-              <span class="split-label">Reze-Preview.png</span>
-            </div>
-          </div>
-        </aside>
       </section>
 
       <section class="section">
-        <div class="section-head fade-up">
-          <h2>Repository Previews</h2>
-          <p>Loaded directly from GitHub raw links.</p>
-        </div>
         <div class="preview-grid">
           <article class="preview-card fade-up">
-            <img
-              class="preview-media"
-              src="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/Preview-Crimson.png"
-              alt="Crimson preview"
-            />
+            <img class="preview-media" src="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/Preview-Crimson.png" alt="Crimson preview" />
             <div class="preview-body">
-              <h3>Preview-Crimson.png</h3>
-              <div class="actions">
-                <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/crimson-theme" target="_blank" rel="noreferrer">Open Repo</a>
-              </div>
+              <h3>Crimson Preview</h3>
+              <p class="lead">Repository: `crimson-theme`</p>
             </div>
           </article>
-
           <article class="preview-card fade-up">
-            <img
-              class="preview-media"
-              src="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/Preview-Purple.png"
-              alt="Purple preview"
-            />
+            <img class="preview-media" src="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/Preview-Purple.png" alt="Purple preview" />
             <div class="preview-body">
-              <h3>Preview-Purple.png</h3>
-              <div class="actions">
-                <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/purple-theme" target="_blank" rel="noreferrer">Open Repo</a>
-              </div>
+              <h3>Purple Preview</h3>
+              <p class="lead">Repository: `purple-theme`</p>
             </div>
           </article>
-
           <article class="preview-card fade-up">
-            <img
-              class="preview-media"
-              src="https://raw.githubusercontent.com/Crimson-Labs/reze-theme/main/Reze-Preview.png"
-              alt="Reze preview"
-            />
+            <img class="preview-media" src="https://raw.githubusercontent.com/Crimson-Labs/reze-theme/main/Reze-Preview.png" alt="Reze preview" />
             <div class="preview-body">
-              <h3>Reze-Preview.png</h3>
-              <div class="actions">
-                <a class="btn btn-secondary" href="https://github.com/Crimson-Labs/reze-theme" target="_blank" rel="noreferrer">Open Repo</a>
-              </div>
+              <h3>Reze Preview</h3>
+              <p class="lead">Repository: `reze-theme`</p>
             </div>
           </article>
         </div>
@@ -124,9 +84,6 @@
     <footer class="site-shell footer">
       <p>Crimson Labs | 2026 | by lostinmyowntears</p>
     </footer>
-
     <script src="assets/js/site.js"></script>
   </body>
 </html>
-
-

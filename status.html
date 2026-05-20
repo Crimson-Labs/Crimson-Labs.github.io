@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Status</title>
-    <meta name="description" content="Live status and free GitHub repository metrics for Crimson Labs projects." />
+    <meta name="description" content="Live repository metrics for Crimson Labs projects." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,67 +14,48 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body class="page-status">
-    <header class="topbar">
+    <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
           <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
           <span>Crimson <mark>Labs</mark></span>
         </a>
-        <div class="top-right">
-          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
-          <nav class="site-nav" data-nav>
-            <a href="index.html">Home</a>
-            <a href="themes.html">Themes</a>
-            <a href="preview.html">Preview</a>
-            <a href="download.html">Download</a>
-            <a href="extensions.html">Extensions</a>
-            <a class="active" href="status.html">Status</a>
-            <a href="credits.html">Credits</a>
-            <a href="install.html">Install Guide</a>
-          </nav>
-          <div class="social-top">
-            <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <img class="social-icon" src="https://cdn.simpleicons.org/github/181717" alt="" />
-            </a>
-            <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-              <img class="social-icon" src="https://cdn.simpleicons.org/discord/5865F2" alt="" />
-            </a>
-            <a class="social-dot" href="https://github.com/Crimson-Labs?tab=repositories" target="_blank" rel="noreferrer" aria-label="Repositories">
-              <img class="social-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" />
-            </a>
-          </div>
+        <div class="social-top">
+          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+          </a>
+          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
+            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
+          </a>
         </div>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a href="preview.html">Preview</a>
+          <a href="download.html">Download</a>
+          <a href="extensions.html">Extensions</a>
+          <a class="active" href="status.html">Status</a>
+          <a href="credits.html">Credits</a>
+          <a href="install.html">Install</a>
+        </nav>
       </div>
     </header>
 
     <main class="site-shell">
-      <section class="hero">
-        <div class="hero-copy fade-up">
-          <span class="motion-ring r1"></span>
-          <span class="motion-ring r2"></span>
-          <span class="eyebrow">Live Status</span>
-          <h1>Repo Health and Activity.</h1>
-          <p class="lead">
-            Free live metrics from the public GitHub API. No extra setup required from your side.
-          </p>
+      <section class="hero fade-up">
+        <span class="eyebrow">Live Repo Status</span>
+        <h1>Public Metrics from GitHub API.</h1>
+        <p class="lead">No paid service, no extra setup, just live repository statistics.</p>
+        <div class="hero-metrics">
+          <span class="chip">Stars</span>
+          <span class="chip">Forks</span>
+          <span class="chip">Open Issues</span>
+          <span class="chip">Last Updated</span>
         </div>
-        <aside class="hero-panel fade-up" data-parallax="5">
-          <div class="theme-split">
-            <div class="split-item crimson">
-              <span class="split-label">Stars + Activity</span>
-            </div>
-            <div class="split-item purple">
-              <span class="split-label">Always Free</span>
-            </div>
-          </div>
-        </aside>
       </section>
 
       <section class="section">
-        <div class="section-head fade-up">
-          <h2>Repository Metrics</h2>
-          <p>Values refresh automatically when users open this page.</p>
-        </div>
         <div class="status-grid">
           <article class="status-card fade-up">
             <h3>Crimson-Labs.github.io</h3>
@@ -122,9 +103,6 @@
     <footer class="site-shell footer">
       <p>Crimson Labs | 2026 | by lostinmyowntears</p>
     </footer>
-
     <script src="assets/js/site.js"></script>
   </body>
 </html>
-
-

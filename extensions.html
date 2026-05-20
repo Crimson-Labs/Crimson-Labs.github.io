@@ -1,13 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Extensions</title>
-    <meta
-      name="description"
-      content="Official BetterDiscord and Vencord extension entry points with starter plugin picks."
-    />
+    <meta name="description" content="Extension starting points and curated picks." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,100 +14,68 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body class="page-extensions">
-    <header class="topbar">
+    <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
           <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
           <span>Crimson <mark>Labs</mark></span>
         </a>
-        <div class="top-right">
-          <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
-          <nav class="site-nav" data-nav>
-            <a href="index.html">Home</a>
-            <a href="themes.html">Themes</a>
-            <a href="preview.html">Preview</a>
-            <a href="download.html">Download</a>
-            <a class="active" href="extensions.html">Extensions</a>
-            <a href="status.html">Status</a>
-            <a href="credits.html">Credits</a>
-            <a href="install.html">Install Guide</a>
-          </nav>
-          <div class="social-top">
-            <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <img class="social-icon" src="https://cdn.simpleicons.org/github/181717" alt="" />
-            </a>
-            <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-              <img class="social-icon" src="https://cdn.simpleicons.org/discord/5865F2" alt="" />
-            </a>
-            <a class="social-dot" href="https://github.com/Crimson-Labs?tab=repositories" target="_blank" rel="noreferrer" aria-label="Repositories">
-              <img class="social-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" />
-            </a>
-          </div>
+        <div class="social-top">
+          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+          </a>
+          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
+            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
+          </a>
         </div>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a href="preview.html">Preview</a>
+          <a href="download.html">Download</a>
+          <a class="active" href="extensions.html">Extensions</a>
+          <a href="status.html">Status</a>
+          <a href="credits.html">Credits</a>
+          <a href="install.html">Install</a>
+        </nav>
       </div>
     </header>
 
     <main class="site-shell">
-      <section class="hero">
-        <div class="hero-copy fade-up">
-          <span class="motion-ring r1"></span>
-          <span class="motion-ring r2"></span>
-          <span class="eyebrow">Extensions</span>
-          <h1>Clean Plugin Setup, Official Sources First.</h1>
-          <p class="lead">
-            BetterDiscord and Vencord both move fast. Use official plugin hubs and docs to avoid broken or unsafe downloads.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://www.betterdiscord.app/plugins" target="_blank" rel="noreferrer"
-              >BetterDiscord Plugins</a
-            >
-          </div>
+      <section class="hero fade-up">
+        <span class="eyebrow">Extensions</span>
+        <h1>Plugin Sources and Starter Picks.</h1>
+        <p class="lead">Stay with official plugin indexes first, then build a small stable set.</p>
+        <div class="hero-metrics">
+          <span class="chip">Official Sources</span>
+          <span class="chip">No Random Mirrors</span>
+          <span class="chip">Compatibility First</span>
         </div>
-        <aside class="hero-panel fade-up" data-parallax="6">
-          <div class="theme-split">
-            <div class="split-item crimson">
-              <span class="split-label">BD Plugin Hub</span>
-            </div>
-            <div class="split-item purple">
-              <span class="split-label">Vencord Plugin Hub</span>
-            </div>
-          </div>
-        </aside>
       </section>
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Official Entry Points</h2>
-          <p>Start from these pages so updates and compatibility stay current.</p>
+          <h2>Primary Indexes</h2>
+          <p>Use these as the base.</p>
         </div>
-        <div class="mini-grid">
-          <article class="mini-card fade-up">
-            <h3>BetterDiscord Plugins</h3>
-            <p>Main listing for community plugins with download buttons and update metadata.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="https://www.betterdiscord.app/plugins" target="_blank" rel="noreferrer"
-                >Open Page</a
-              >
+        <div class="grid">
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>BetterDiscord Plugins</h3>
+              <p>Official BetterDiscord plugin index.</p>
+              <div class="actions">
+                <a class="btn btn-primary" href="https://www.betterdiscord.app/plugins" target="_blank" rel="noreferrer">Open Index</a>
+              </div>
             </div>
           </article>
-          <article class="mini-card fade-up">
-            <h3>Vencord Plugins</h3>
-            <p>Official plugin browser for Vencord with detailed pages for each plugin.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="https://vencord.dev/plugins" target="_blank" rel="noreferrer">Open Page</a>
-            </div>
-          </article>
-          <article class="mini-card fade-up">
-            <h3>Crimson Labs GitHub</h3>
-            <p>Track updates for your themes and future releases in one place.</p>
-            <div class="actions">
-              <a
-                class="btn btn-secondary"
-                href="https://github.com/Crimson-Labs?tab=repositories"
-                target="_blank"
-                rel="noreferrer"
-                >View Repositories</a
-              >
+          <article class="card fade-up">
+            <div class="card-body">
+              <h3>Vencord Plugins</h3>
+              <p>Official Vencord plugin browser.</p>
+              <div class="actions">
+                <a class="btn btn-primary" href="https://vencord.dev/plugins" target="_blank" rel="noreferrer">Open Index</a>
+              </div>
             </div>
           </article>
         </div>
@@ -118,81 +83,30 @@
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Starter Picks</h2>
-          <p>Quick examples to test first. Always verify plugin details on the official plugin page before installing.</p>
+          <h2>Starter Sets</h2>
+          <p>Examples only, keep your stack small.</p>
         </div>
         <div class="extension-board">
           <article class="ext-column fade-up">
-            <h3>BetterDiscord Picks</h3>
-            <div class="ext-item">
-              <span class="ext-index">01</span>
-              <p>Volume granularity and cleaner controls.</p>
-              <a href="https://betterdiscord.app/plugins/BetterVolume" target="_blank" rel="noreferrer">Open</a>
-            </div>
-            <div class="ext-item">
-              <span class="ext-index">02</span>
-              <p>Organize folders with better handling.</p>
-              <a href="https://www.betterdiscord.app/plugins/BetterFolders" target="_blank" rel="noreferrer">Open</a>
-            </div>
-            <div class="ext-item">
-              <span class="ext-index">03</span>
-              <p>Reduce tracking behavior in the client.</p>
-              <a href="https://www.betterdiscord.app/plugins/DoNotTrack" target="_blank" rel="noreferrer">Open</a>
-            </div>
+            <h3>BetterDiscord</h3>
+            <div class="ext-item"><span class="ext-index">01</span><p>BetterVolume</p><a href="https://betterdiscord.app/plugins/BetterVolume" target="_blank" rel="noreferrer">Open</a></div>
+            <div class="ext-item"><span class="ext-index">02</span><p>BetterFolders</p><a href="https://www.betterdiscord.app/plugins/BetterFolders" target="_blank" rel="noreferrer">Open</a></div>
+            <div class="ext-item"><span class="ext-index">03</span><p>DoNotTrack</p><a href="https://www.betterdiscord.app/plugins/DoNotTrack" target="_blank" rel="noreferrer">Open</a></div>
           </article>
-
           <article class="ext-column fade-up">
-            <h3>Vencord Picks</h3>
-            <div class="ext-item">
-              <span class="ext-index">01</span>
-              <p>Show live member count inside servers.</p>
-              <a href="https://vencord.dev/plugins/MemberCount" target="_blank" rel="noreferrer">Open</a>
-            </div>
-            <div class="ext-item">
-              <span class="ext-index">02</span>
-              <p>Power tools bundle for quality-of-life tweaks.</p>
-              <a href="https://vencord.dev/plugins/VencordToolbox" target="_blank" rel="noreferrer">Open</a>
-            </div>
-            <div class="ext-item">
-              <span class="ext-index">03</span>
-              <p>Extra folder controls in the server list.</p>
-              <a href="https://vencord.dev/plugins/BetterFolders" target="_blank" rel="noreferrer">Open</a>
-            </div>
+            <h3>Vencord</h3>
+            <div class="ext-item"><span class="ext-index">01</span><p>MemberCount</p><a href="https://vencord.dev/plugins/MemberCount" target="_blank" rel="noreferrer">Open</a></div>
+            <div class="ext-item"><span class="ext-index">02</span><p>VencordToolbox</p><a href="https://vencord.dev/plugins/VencordToolbox" target="_blank" rel="noreferrer">Open</a></div>
+            <div class="ext-item"><span class="ext-index">03</span><p>BetterFolders</p><a href="https://vencord.dev/plugins/BetterFolders" target="_blank" rel="noreferrer">Open</a></div>
           </article>
         </div>
-        <div class="notice fade-up">
-          Compatibility note: BetterDiscord and Vencord should not be stacked in the same Discord client install.
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head fade-up">
-          <h2>Stack Strategy</h2>
-          <p>Pick one client ecosystem and keep your plugin list intentional for long-term stability.</p>
-        </div>
-        <div class="mini-grid">
-          <article class="mini-card fade-up">
-            <h3>Use Official Indexes</h3>
-            <p>Install from official plugin directories to avoid outdated or repacked files.</p>
-          </article>
-          <article class="mini-card fade-up">
-            <h3>Update in Small Batches</h3>
-            <p>Change one plugin at a time so regressions are easy to trace and revert.</p>
-          </article>
-          <article class="mini-card fade-up">
-            <h3>Theme First, Plugins Second</h3>
-            <p>Enable your theme baseline before adding visual plugin layers.</p>
-          </article>
-        </div>
+        <div class="notice fade-up">Do not stack BetterDiscord and Vencord in the same Discord install.</div>
       </section>
     </main>
 
     <footer class="site-shell footer">
       <p>Crimson Labs | 2026 | by lostinmyowntears</p>
     </footer>
-
     <script src="assets/js/site.js"></script>
   </body>
 </html>
-
-

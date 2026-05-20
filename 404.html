@@ -1,9 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found - Crimson Labs</title>
+    <title>Crimson Labs - 404</title>
+    <meta name="description" content="Page not found." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,21 +14,48 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body class="page-404">
+    <header class="topbar-wrap">
+      <div class="site-shell topbar-inner">
+        <a class="brand" href="index.html">
+          <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
+          <span>Crimson <mark>Labs</mark></span>
+        </a>
+        <div class="social-top">
+          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
+          </a>
+          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
+            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
+          </a>
+        </div>
+        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <nav class="site-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="themes.html">Themes</a>
+          <a href="preview.html">Preview</a>
+          <a href="download.html">Download</a>
+          <a href="extensions.html">Extensions</a>
+          <a href="status.html">Status</a>
+          <a href="credits.html">Credits</a>
+          <a href="install.html">Install</a>
+        </nav>
+      </div>
+    </header>
+
     <main class="site-shell">
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="motion-ring r1"></span>
-          <span class="motion-ring r2"></span>
-          <span class="eyebrow">404</span>
-          <h1>This page is missing.</h1>
-          <p class="lead">The link may be outdated, or the page was moved.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="index.html">Back to Home</a>
-          </div>
+      <section class="hero fade-up">
+        <span class="eyebrow">404</span>
+        <h1>This page is missing.</h1>
+        <p class="lead">The link may be outdated, renamed, or removed.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="index.html">Back to Home</a>
         </div>
       </section>
     </main>
+
+    <footer class="site-shell footer">
+      <p>Crimson Labs | 2026 | by lostinmyowntears</p>
+    </footer>
     <script src="assets/js/site.js"></script>
   </body>
 </html>
-
