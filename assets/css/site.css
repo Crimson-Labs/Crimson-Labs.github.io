@@ -828,6 +828,123 @@ h1 {
   color: var(--text-muted);
 }
 
+/* Credits page unique layout */
+.credits-shell {
+  padding-top: 1.7rem;
+}
+
+.credits-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.credits-title {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem;
+}
+
+.credits-title h1 {
+  margin-top: 0.65rem;
+}
+
+.credits-title p {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+
+.credits-quote {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255, 242, 237, 0.72));
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  color: #7a2a3e;
+}
+
+.credits-people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.credit-spotlight {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 1.1rem;
+}
+
+.credit-label {
+  margin: 0;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.credit-spotlight h2 {
+  margin-top: 0.45rem;
+}
+
+.credit-spotlight h2 a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.credit-spotlight p {
+  margin: 0.55rem 0 0;
+  color: var(--text-muted);
+}
+
+.credits-matrix .matrix-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.matrix-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 0.85rem 0.95rem;
+}
+
+.matrix-row p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.matrix-row a {
+  font-weight: 700;
+}
+
+.tos-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  padding: 0.75rem 1rem;
+}
+
 /* 404 center */
 body.page-404 {
   display: flex;
@@ -879,6 +996,16 @@ body.page-404 .hero {
 
   .theme-meta {
     grid-template-columns: 1fr;
+  }
+
+  .credits-intro,
+  .credits-people {
+    grid-template-columns: 1fr;
+  }
+
+  .matrix-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 }
 
