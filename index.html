@@ -4,40 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Home</title>
-    <meta name="description" content="Crimson Labs custom themes for BetterDiscord and Vencord." />
+    <meta name="description" content="Crimson Labs - modern BetterDiscord and Vencord theme hub." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-home">
+  <body class="page-home" data-page="home">
     <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
         <a class="brand" href="index.html">
           <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
           <span>Crimson <mark>Labs</mark></span>
         </a>
-        <div class="social-top">
-          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
-          </a>
-          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
-          </a>
-        </div>
-        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+<button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
         <nav class="site-nav" data-nav>
           <a class="active" href="index.html">Home</a>
           <a href="themes.html">Themes</a>
           <a href="preview.html">Preview</a>
           <a href="download.html">Download</a>
-          <a href="extensions.html">Extensions</a>
-          <a href="status.html">Status</a>
-          <a href="credits.html">Credits</a>
           <a href="install.html">Install</a>
+          <a href="credits.html">Credits</a>
+          <a href="privacy.html">Legal</a>
+          <a href="me.html">Me</a>
         </nav>
       </div>
     </header>
@@ -45,92 +34,29 @@
     <main class="site-shell">
       <section class="hero fade-up">
         <span class="eyebrow">Crimson Labs</span>
-        <h1>Custom Discord Themes, Clean and Modern.</h1>
-        <p class="lead">
-          I create BetterDiscord and Vencord themes, clean & modern for everyone.
-        </p>
+        <h1>Custom BetterDiscord Themes.</h1>
+        <p class="lead">Clean looks, direct downloads, and fast setup.</p>
         <div class="hero-metrics">
-          <span class="chip">BetterDiscord + Vencord</span
+          <span class="chip">BetterDiscord + Vencord</span>
         </div>
       </section>
 
       <section class="section">
         <div class="section-head fade-up">
-          <h2>Featured Themes</h2>
+          <h2>Theme Lineup</h2>
         </div>
-        <div class="grid">
-          <article class="card fade-up">
-            <div class="card-preview">
-              <img
-                class="card-preview-img"
-                src="https://raw.githubusercontent.com/Crimson-Labs/crimson-theme/main/crimson-bg.gif"
-                alt="Crimson theme animated preview"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Crimson Glass</h3>
-              <p>A modern glass-style theme with a nice background GIF</p>
-              <div class="pill-row">
-                <span class="pill">
-  <a href="https://github.com/Crimson-Labs/crimson-theme">crimson-theme</a>
-</span>
-                <span class="pill">Anime Styled</span>
-              </div>
-            </div>
-          </article>
-          <article class="card fade-up">
-            <div class="card-preview">
-              <img
-                class="card-preview-img"
-                src="https://raw.githubusercontent.com/Crimson-Labs/purple-theme/main/purple-bg.gif"
-                alt="Purple theme animated preview"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Purple Glass</h3>
-              <p>A modern glass-style theme with a Marin Kitagawa background GIF</p>
-              <div class="pill-row">
-                <span class="pill">
-  <a href="https://github.com/Crimson-Labs/purple-theme">purple-theme</a>
-</span>
-                <span class="pill">
-  <a href="https://www.crunchyroll.com/series/GQWH0M9N8/my-dress-up-darling">My Dress-Up Darling</a>
-</span>
-              </div>
-            </div>
-          </article>
-          <article class="card fade-up">
-            <div class="card-preview">
-              <img
-                class="card-preview-img"
-                src="https://raw.githubusercontent.com/Crimson-Labs/reze-theme/main/reze-bg.png"
-                alt="Reze theme static preview"
-              />
-            </div>
-            <div class="card-body">
-              <h3>Reze Noir</h3>
-              <p>a clean, modern black and purple discord theme with reze-inspired anime styling.</p>
-              <div class="pill-row">
-                <span class="pill">
-  <a href="https://github.com/Crimson-Labs/reze-theme">reze-theme</a>
-</span>
-                 <span class="pill">
-  <a href="https://www.crunchyroll.com/series/GVDHX8QNW/chainsaw-man">Chainsaw Man</a>
-</span>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div class="grid grid-3" data-render="home-themes"></div>
       </section>
     </main>
 
     <footer class="site-shell footer">
       <p>
         <a href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer">Crimson-Labs</a>
-        | 2026 | by
+        | <span data-year>2026</span> | by
         <a href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer">lostinmyowntears</a>
       </p>
     </footer>
+    <script src="assets/data/themes.js"></script>
     <script src="assets/js/site.js"></script>
   </body>
 </html>

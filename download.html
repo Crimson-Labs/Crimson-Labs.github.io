@@ -4,40 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Download</title>
-    <meta name="description" content="Official client downloads and theme repositories." />
+    <meta name="description" content="Client downloads and direct theme files." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-download">
+  <body class="page-download" data-page="download">
     <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
-        <a class="brand" href="index.html">
-          <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
-          <span>Crimson <mark>Labs</mark></span>
-        </a>
-        <div class="social-top">
-          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
-          </a>
-          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
-          </a>
-        </div>
-        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <a class="brand" href="index.html"><img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" /><span>Crimson <mark>Labs</mark></span></a>
+<button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
         <nav class="site-nav" data-nav>
           <a href="index.html">Home</a>
           <a href="themes.html">Themes</a>
           <a href="preview.html">Preview</a>
           <a class="active" href="download.html">Download</a>
-          <a href="extensions.html">Extensions</a>
-          <a href="status.html">Status</a>
-          <a href="credits.html">Credits</a>
           <a href="install.html">Install</a>
+          <a href="credits.html">Credits</a>
+          <a href="privacy.html">Legal</a>
+          <a href="me.html">Me</a>
         </nav>
       </div>
     </header>
@@ -45,51 +31,47 @@
     <main class="site-shell">
       <section class="hero fade-up">
         <span class="eyebrow">Download Center</span>
-        <h1>Clients and Repositories in One Place.</h1>
-        <p class="lead">Use official client pages, then pick the theme repository you want.</p>
+        <h1>Client Setup + Theme Files.</h1>
+        <p class="lead">Official app entry points first, then direct theme files with preview attached.</p>
       </section>
 
       <section class="section">
-        <div class="section-head fade-up">
-          <h2>Client Downloads</h2>
-        </div>
-        <div class="grid">
-          <article class="card fade-up">
-            <div class="card-body">
+        <div class="section-head fade-up"><h2>Client Downloads</h2></div>
+        <div class="download-grid">
+          <article class="download-card fade-up" data-tilt>
+            <div class="download-head">
+              <img class="brand-icon" src="https://cdn.simpleicons.org/betterdiscord/ffffff" onerror="this.src='assets/img/icon-discord.svg'" alt="BetterDiscord icon" />
               <h3>BetterDiscord</h3>
-              <p>Download BetterDiscord from the official website.</p>
-              <div class="actions">
-                <a class="btn btn-primary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">Open Download</a>
-              </div>
+            </div>
+            <p>Official installer and docs.</p>
+            <div class="btn-row" style="padding:0.78rem 0.95rem 0.95rem; margin-top:0;">
+              <a class="btn btn-primary" href="https://betterdiscord.app/" target="_blank" rel="noreferrer">Open Website</a>
             </div>
           </article>
-          <article class="card fade-up">
-            <div class="card-body">
+
+          <article class="download-card fade-up" data-tilt>
+            <div class="download-head">
+              <img class="brand-icon" src="https://cdn.simpleicons.org/vencord/ffffff" onerror="this.src='assets/img/icon-links.svg'" alt="Vencord icon" />
               <h3>Vencord</h3>
-              <p>Download Vencord from the official download page.</p>
-              <div class="actions">
-                <a class="btn btn-primary" href="https://vencord.dev/download/" target="_blank" rel="noreferrer">Open Download</a>
-              </div>
+            </div>
+            <p>Official downloads and setup page.</p>
+            <div class="btn-row" style="padding:0.78rem 0.95rem 0.95rem; margin-top:0;">
+              <a class="btn btn-primary" href="https://vencord.dev/download/" target="_blank" rel="noreferrer">Open Website</a>
             </div>
           </article>
         </div>
       </section>
 
       <section class="section">
-        <div class="section-head fade-up">
-          <h2>Theme Repositories</h2>
-        </div>
-        <div class="grid">
-          <article class="card fade-up"><div class="card-body"><h3>crimson-theme</h3><p>Red glass variant.</p><div class="actions"><a class="btn btn-secondary" href="https://github.com/Crimson-Labs/crimson-theme" target="_blank" rel="noreferrer">Open Repo</a></div></div></article>
-          <article class="card fade-up"><div class="card-body"><h3>purple-theme</h3><p>Purple glass variant.</p><div class="actions"><a class="btn btn-secondary" href="https://github.com/Crimson-Labs/purple-theme" target="_blank" rel="noreferrer">Open Repo</a></div></div></article>
-          <article class="card fade-up"><div class="card-body"><h3>reze-theme</h3><p>Dark purple noir variant.</p><div class="actions"><a class="btn btn-secondary" href="https://github.com/Crimson-Labs/reze-theme" target="_blank" rel="noreferrer">Open Repo</a></div></div></article>
-        </div>
+        <div class="section-head fade-up"><h2>Theme Files</h2></div>
+        <div class="download-grid" data-render="download-themes"></div>
       </section>
     </main>
 
     <footer class="site-shell footer">
-      <p>Crimson Labs | 2026 | by lostinmyowntears</p>
+      <p><a href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer">Crimson-Labs</a> | <span data-year>2026</span> | by <a href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer">lostinmyowntears</a></p>
     </footer>
+    <script src="assets/data/themes.js"></script>
     <script src="assets/js/site.js"></script>
   </body>
 </html>

@@ -4,64 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crimson Labs - Install</title>
-    <meta name="description" content="Quick setup flow for Crimson Labs themes." />
+    <meta name="description" content="Detailed install guide for Crimson Labs themes." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
-  <body class="page-install">
+  <body class="page-install" data-page="install">
     <header class="topbar-wrap">
       <div class="site-shell topbar-inner">
-        <a class="brand" href="index.html">
-          <img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" />
-          <span>Crimson <mark>Labs</mark></span>
-        </a>
-        <div class="social-top">
-          <a class="social-dot" href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <img class="social-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="" />
-          </a>
-          <a class="social-dot" href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer" aria-label="Discord">
-            <img class="social-icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="" />
-          </a>
-        </div>
-        <button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
+        <a class="brand" href="index.html"><img class="logo-mark" src="https://avatars.githubusercontent.com/u/284690579?v=4" alt="Crimson Labs avatar" /><span>Crimson <mark>Labs</mark></span></a>
+<button class="nav-toggle" type="button" data-nav-toggle>Menu</button>
         <nav class="site-nav" data-nav>
           <a href="index.html">Home</a>
           <a href="themes.html">Themes</a>
           <a href="preview.html">Preview</a>
           <a href="download.html">Download</a>
-          <a href="extensions.html">Extensions</a>
-          <a href="status.html">Status</a>
-          <a href="credits.html">Credits</a>
           <a class="active" href="install.html">Install</a>
+          <a href="credits.html">Credits</a>
+          <a href="privacy.html">Legal</a>
+          <a href="me.html">Me</a>
         </nav>
       </div>
     </header>
 
     <main class="site-shell">
       <section class="hero fade-up">
-        <span class="eyebrow">Install Flow</span>
-        <h1>Set Up Any Theme in Under 3 Minutes.</h1>
-        <p class="lead">Use this sequence for BetterDiscord or Vencord.</p>
+        <span class="eyebrow">Install Guide</span>
+        <h1>Clean and Detailed Setup for Both Clients.</h1>
+        <p class="lead">This is the full path from fresh install to a working theme, including fallback steps if your theme does not show immediately.</p>
       </section>
 
-      <section class="section">
-        <div class="steps-flow">
-          <article class="step-card fade-up"><span class="step-no">01</span><div><h3>Open Themes Page</h3><p>Go to `Themes` and choose your preferred style.</p></div></article>
-          <article class="step-card fade-up"><span class="step-no">02</span><div><h3>Download .theme.css</h3><p>Use the raw download button from the selected theme card.</p></div></article>
-          <article class="step-card fade-up"><span class="step-no">03</span><div><h3>Move into Theme Folder</h3><p>Place the file in your BetterDiscord/Vencord themes directory.</p></div></article>
-          <article class="step-card fade-up"><span class="step-no">04</span><div><h3>Enable and Reload</h3><p>Enable the theme in client settings and reload Discord if needed.</p></div></article>
-        </div>
+      <section class="section install-flow">
+        <article class="install-step fade-up">
+          <span class="step-no">1</span>
+          <div>
+            <h3>Install a Client</h3>
+            <p>Choose BetterDiscord or Vencord from the Download page and complete their official installer process first.</p>
+          </div>
+        </article>
+
+        <article class="install-step fade-up">
+          <span class="step-no">2</span>
+          <div>
+            <h3>Download a Theme File</h3>
+            <p>Open <a href="themes.html">Themes</a>, pick your style, and use "Download Theme" to open the raw <code>.theme.css</code> file.</p>
+          </div>
+        </article>
+
+        <article class="install-step fade-up">
+          <span class="step-no">3</span>
+          <div>
+            <h3>Save the File Correctly</h3>
+            <p>Save the raw file without renaming the extension. Keep it as <code>.theme.css</code> and avoid adding <code>.txt</code>.</p>
+          </div>
+        </article>
+
+        <article class="install-step fade-up">
+          <span class="step-no">4</span>
+          <div>
+            <h3>Move It to the Themes Folder</h3>
+            <p>BetterDiscord: open Discord Settings > Themes > "Open Themes Folder". Place your file there. For Vencord, use its theme folder path from settings.</p>
+          </div>
+        </article>
+
+        <article class="install-step fade-up">
+          <span class="step-no">5</span>
+          <div>
+            <h3>Enable and Reload</h3>
+            <p>Enable the theme toggle. If changes are not visible, restart Discord once, then disable/enable the theme again.</p>
+          </div>
+        </article>
+
+        <article class="install-step fade-up">
+          <span class="step-no">6</span>
+          <div>
+            <h3>Troubleshooting</h3>
+            <p>If UI breaks: test another theme from this site, verify internet connection (raw URL must be reachable), and confirm no duplicate conflicting CSS files are active.</p>
+          </div>
+        </article>
       </section>
     </main>
 
     <footer class="site-shell footer">
-      <p>Crimson Labs | 2026 | by lostinmyowntears</p>
+      <p><a href="https://github.com/Crimson-Labs" target="_blank" rel="noreferrer">Crimson-Labs</a> | <span data-year>2026</span> | by <a href="https://discord.com/users/1503886610163433514" target="_blank" rel="noreferrer">lostinmyowntears</a></p>
     </footer>
+    <script src="assets/data/themes.js"></script>
     <script src="assets/js/site.js"></script>
   </body>
 </html>
